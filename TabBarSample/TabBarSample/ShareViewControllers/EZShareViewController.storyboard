@@ -76,19 +76,31 @@
                                     <constraint firstAttribute="height" constant="300" id="xc6-4o-MXf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共用資訊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8k-tf-klm">
-                                <rect key="frame" x="57" y="364" width="69.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貓貓的名字：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8k-tf-klm">
+                                <rect key="frame" x="57" y="364" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入貓貓的名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAm-Gk-5yf">
+                                <rect key="frame" x="20" y="385" width="374" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fOf-XL-qIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4dO-He-akx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4dO-He-akx" firstAttribute="bottom" secondItem="z3B-ef-UIL" secondAttribute="bottom" id="9l4-Gq-wec"/>
+                            <constraint firstItem="WAm-Gk-5yf" firstAttribute="top" secondItem="j8k-tf-klm" secondAttribute="bottom" id="CHz-Pb-FEu"/>
                             <constraint firstItem="4dO-He-akx" firstAttribute="trailing" secondItem="z3B-ef-UIL" secondAttribute="trailing" id="DTn-Ua-Zx0"/>
+                            <constraint firstItem="4dO-He-akx" firstAttribute="trailing" secondItem="WAm-Gk-5yf" secondAttribute="trailing" constant="20" id="Eg8-Rg-LiL"/>
                             <constraint firstItem="swg-GX-Ho8" firstAttribute="leading" secondItem="rpu-FW-w39" secondAttribute="leading" id="MAC-hz-EdB"/>
+                            <constraint firstItem="WAm-Gk-5yf" firstAttribute="leading" secondItem="4dO-He-akx" secondAttribute="leading" constant="20" id="SDV-Ha-caa"/>
                             <constraint firstItem="pMN-jW-Vk3" firstAttribute="centerX" secondItem="rpu-FW-w39" secondAttribute="centerX" id="bkN-YB-sHe"/>
                             <constraint firstItem="z3B-ef-UIL" firstAttribute="leading" secondItem="4dO-He-akx" secondAttribute="leading" id="cz2-E7-MSe"/>
                             <constraint firstItem="pMN-jW-Vk3" firstAttribute="top" secondItem="4dO-He-akx" secondAttribute="top" id="kRu-cG-kDe"/>
@@ -112,6 +124,9 @@
         <image name="image_sample_cat" width="850" height="710"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
