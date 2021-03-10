@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,48 +70,124 @@
                                     <constraint firstItem="fpH-YQ-w6w" firstAttribute="centerY" secondItem="hUA-Ii-GqN" secondAttribute="centerY" id="w5P-xg-Ia7"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_sample_cat" translatesAutoresizingMaskIntoConstraints="NO" id="pMN-jW-Vk3">
-                                <rect key="frame" x="57" y="44" width="300" height="300"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15p-eE-ME5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-K0-4Id">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="738"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_sample_cat" translatesAutoresizingMaskIntoConstraints="NO" id="3QF-V0-Dz5">
+                                                <rect key="frame" x="57" y="0.0" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="0TE-cE-ZTe"/>
+                                                    <constraint firstAttribute="width" constant="300" id="Wrv-ko-zmW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貓貓的名字：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCM-ld-elZ">
+                                                <rect key="frame" x="15" y="320" width="104" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入貓貓的名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Zl-fV-KbG">
+                                                <rect key="frame" x="15" y="341" width="384" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="UGF-9B-4hR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j03-Rv-FyF">
+                                                <rect key="frame" x="0.0" y="464" width="414" height="264"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="264" id="zdT-fT-e1p"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jri-NH-jNB">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellIdentifier" id="cgT-C7-J8A">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4l-Am-KSU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_sample_cat" translatesAutoresizingMaskIntoConstraints="NO" id="4EL-n7-tXE">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="4EL-n7-tXE" secondAttribute="trailing" id="aRY-tz-YWk"/>
+                                                                <constraint firstAttribute="bottom" secondItem="4EL-n7-tXE" secondAttribute="bottom" id="e41-cn-saE"/>
+                                                                <constraint firstItem="4EL-n7-tXE" firstAttribute="leading" secondItem="X4l-Am-KSU" secondAttribute="leading" id="p3J-vJ-ocs"/>
+                                                                <constraint firstItem="4EL-n7-tXE" firstAttribute="top" secondItem="X4l-Am-KSU" secondAttribute="top" id="vjZ-5V-QI7"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="s1L-uE-c7f" id="NFN-wZ-zMf"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多貓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAs-px-lYk">
+                                                <rect key="frame" x="15" y="443" width="52" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3QF-V0-Dz5" firstAttribute="centerX" secondItem="2CP-K0-4Id" secondAttribute="centerX" id="1KP-zg-s1O"/>
+                                            <constraint firstItem="3QF-V0-Dz5" firstAttribute="top" secondItem="2CP-K0-4Id" secondAttribute="top" id="H59-uP-UyE"/>
+                                            <constraint firstItem="j03-Rv-FyF" firstAttribute="top" secondItem="TAs-px-lYk" secondAttribute="bottom" id="Kdf-Ot-tK4"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Zl-fV-KbG" secondAttribute="trailing" constant="15" id="Lcb-LQ-i8d"/>
+                                            <constraint firstItem="4Zl-fV-KbG" firstAttribute="leading" secondItem="2CP-K0-4Id" secondAttribute="leading" constant="15" id="NvG-zI-vTs"/>
+                                            <constraint firstItem="TAs-px-lYk" firstAttribute="top" secondItem="4Zl-fV-KbG" secondAttribute="bottom" constant="2" id="Sfg-bo-aqS"/>
+                                            <constraint firstItem="j03-Rv-FyF" firstAttribute="leading" secondItem="2CP-K0-4Id" secondAttribute="leading" id="clA-nP-JEN"/>
+                                            <constraint firstAttribute="bottom" secondItem="j03-Rv-FyF" secondAttribute="bottom" constant="10" id="e04-S5-mVP"/>
+                                            <constraint firstItem="4Zl-fV-KbG" firstAttribute="top" secondItem="QCM-ld-elZ" secondAttribute="bottom" id="eTo-9K-5Zk"/>
+                                            <constraint firstItem="QCM-ld-elZ" firstAttribute="leading" secondItem="4Zl-fV-KbG" secondAttribute="leading" id="hme-yB-Nxz"/>
+                                            <constraint firstItem="TAs-px-lYk" firstAttribute="leading" secondItem="QCM-ld-elZ" secondAttribute="leading" id="jBw-mb-xGZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="j03-Rv-FyF" secondAttribute="trailing" id="jgP-fc-Hz6"/>
+                                            <constraint firstItem="QCM-ld-elZ" firstAttribute="top" secondItem="3QF-V0-Dz5" secondAttribute="bottom" constant="20" id="mh3-Nq-1D5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="dCK-eJ-As8"/>
-                                    <constraint firstAttribute="height" constant="300" id="xc6-4o-MXf"/>
+                                    <constraint firstAttribute="bottom" secondItem="2CP-K0-4Id" secondAttribute="bottom" id="ThW-rg-Sbf"/>
+                                    <constraint firstItem="2CP-K0-4Id" firstAttribute="leading" secondItem="15p-eE-ME5" secondAttribute="leading" id="bnj-ri-iYT"/>
+                                    <constraint firstAttribute="trailing" secondItem="2CP-K0-4Id" secondAttribute="trailing" id="wX3-j5-1CV"/>
+                                    <constraint firstItem="2CP-K0-4Id" firstAttribute="top" secondItem="15p-eE-ME5" secondAttribute="top" id="z6L-jt-NCc"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貓貓的名字：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8k-tf-klm">
-                                <rect key="frame" x="57" y="364" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入貓貓的名字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAm-Gk-5yf">
-                                <rect key="frame" x="20" y="385" width="374" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="fOf-XL-qIb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4dO-He-akx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="15p-eE-ME5" firstAttribute="leading" secondItem="4dO-He-akx" secondAttribute="leading" id="3kf-Hn-5GB"/>
                             <constraint firstItem="4dO-He-akx" firstAttribute="bottom" secondItem="z3B-ef-UIL" secondAttribute="bottom" id="9l4-Gq-wec"/>
-                            <constraint firstItem="WAm-Gk-5yf" firstAttribute="top" secondItem="j8k-tf-klm" secondAttribute="bottom" id="CHz-Pb-FEu"/>
                             <constraint firstItem="4dO-He-akx" firstAttribute="trailing" secondItem="z3B-ef-UIL" secondAttribute="trailing" id="DTn-Ua-Zx0"/>
-                            <constraint firstItem="4dO-He-akx" firstAttribute="trailing" secondItem="WAm-Gk-5yf" secondAttribute="trailing" constant="20" id="Eg8-Rg-LiL"/>
+                            <constraint firstItem="15p-eE-ME5" firstAttribute="trailing" secondItem="4dO-He-akx" secondAttribute="trailing" id="FFg-ii-HoO"/>
                             <constraint firstItem="swg-GX-Ho8" firstAttribute="leading" secondItem="rpu-FW-w39" secondAttribute="leading" id="MAC-hz-EdB"/>
-                            <constraint firstItem="WAm-Gk-5yf" firstAttribute="leading" secondItem="4dO-He-akx" secondAttribute="leading" constant="20" id="SDV-Ha-caa"/>
-                            <constraint firstItem="pMN-jW-Vk3" firstAttribute="centerX" secondItem="rpu-FW-w39" secondAttribute="centerX" id="bkN-YB-sHe"/>
+                            <constraint firstItem="15p-eE-ME5" firstAttribute="top" secondItem="4dO-He-akx" secondAttribute="top" id="Sf1-CU-EtN"/>
                             <constraint firstItem="z3B-ef-UIL" firstAttribute="leading" secondItem="4dO-He-akx" secondAttribute="leading" id="cz2-E7-MSe"/>
-                            <constraint firstItem="pMN-jW-Vk3" firstAttribute="top" secondItem="4dO-He-akx" secondAttribute="top" id="kRu-cG-kDe"/>
-                            <constraint firstItem="j8k-tf-klm" firstAttribute="top" secondItem="pMN-jW-Vk3" secondAttribute="bottom" constant="20" id="pbw-Dk-tak"/>
                             <constraint firstItem="4dO-He-akx" firstAttribute="bottom" secondItem="swg-GX-Ho8" secondAttribute="bottom" id="qd9-VZ-1S4"/>
+                            <constraint firstItem="2CP-K0-4Id" firstAttribute="width" secondItem="rpu-FW-w39" secondAttribute="width" id="uT7-Wf-PCv"/>
                             <constraint firstItem="4dO-He-akx" firstAttribute="trailing" secondItem="swg-GX-Ho8" secondAttribute="trailing" id="uuJ-qw-L6R"/>
-                            <constraint firstItem="j8k-tf-klm" firstAttribute="leading" secondItem="pMN-jW-Vk3" secondAttribute="leading" id="vMN-vy-UWr"/>
+                            <constraint firstItem="z3B-ef-UIL" firstAttribute="top" secondItem="15p-eE-ME5" secondAttribute="bottom" id="x2P-Jv-LAV"/>
+                            <constraint firstItem="swg-GX-Ho8" firstAttribute="top" secondItem="15p-eE-ME5" secondAttribute="bottom" id="ype-qz-YGc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="j03-Rv-FyF" id="6AV-pJ-6Ed"/>
+                        <outlet property="collectionViewLayoutConstriant" destination="zdT-fT-e1p" id="xMY-pL-6ZA"/>
                         <outlet property="createContainerView" destination="z3B-ef-UIL" id="eOp-zI-OGX"/>
                         <outlet property="searchContainerView" destination="swg-GX-Ho8" id="hY5-B2-0Rd"/>
                     </connections>
