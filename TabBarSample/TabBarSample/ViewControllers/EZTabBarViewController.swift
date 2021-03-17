@@ -61,6 +61,9 @@ class EZTabBarViewController: UITabBarController {
                 vc.present(controller, animated: true, completion: nil)
             }
             return vc
+        case "Promotion":
+            let vc = CGMainViewController.getCGMainViewController()
+            return vc
         default:
             return UIViewController()
         }

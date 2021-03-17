@@ -10,6 +10,8 @@
 		5230807D25EF6F7600850BEF /* EZShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230807C25EF6F7600850BEF /* EZShareViewController.swift */; };
 		5230808025EF706400850BEF /* EZShareViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5230807F25EF706400850BEF /* EZShareViewController.storyboard */; };
 		5230808325EF71A500850BEF /* EZMyShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230808225EF71A500850BEF /* EZMyShareViewController.swift */; };
+		52AC1EBF26019BAE00472B5E /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC1EBE26019BAE00472B5E /* UIView+RoundCorner.swift */; };
+		52AC1EC226019BEB00472B5E /* CALayer+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC1EC126019BEB00472B5E /* CALayer+Color.swift */; };
 		52CFDE1125E4A15000FA1226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CFDE1025E4A15000FA1226 /* AppDelegate.swift */; };
 		52CFDE1325E4A15000FA1226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CFDE1225E4A15000FA1226 /* SceneDelegate.swift */; };
 		52CFDE1525E4A15000FA1226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CFDE1425E4A15000FA1226 /* ViewController.swift */; };
@@ -19,12 +21,19 @@
 		52CFDE2825E4A1BC00FA1226 /* EZTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CFDE2725E4A1BC00FA1226 /* EZTabBarViewController.swift */; };
 		52D07A7D25E8CFBB00139941 /* EZTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D07A7C25E8CFBB00139941 /* EZTableViewController.swift */; };
 		52D07A8125E8D0E900139941 /* EZTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D07A8025E8D0E900139941 /* EZTableDetailViewController.swift */; };
+		52D3D1892600AEC700AFD23B /* CGCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D3D1882600AEC700AFD23B /* CGCardView.xib */; };
+		52D3D18C2600AEDA00AFD23B /* CGCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3D18B2600AEDA00AFD23B /* CGCardView.swift */; };
+		52D3D18F2600B11900AFD23B /* CGMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3D18E2600B11900AFD23B /* CGMainViewController.swift */; };
+		52D3D1922600B12800AFD23B /* CGMainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D3D1912600B12800AFD23B /* CGMainViewController.storyboard */; };
+		52D3D1962600B9A900AFD23B /* nib+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3D1952600B9A900AFD23B /* nib+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5230807C25EF6F7600850BEF /* EZShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZShareViewController.swift; sourceTree = "<group>"; };
 		5230807F25EF706400850BEF /* EZShareViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EZShareViewController.storyboard; sourceTree = "<group>"; };
 		5230808225EF71A500850BEF /* EZMyShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZMyShareViewController.swift; sourceTree = "<group>"; };
+		52AC1EBE26019BAE00472B5E /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
+		52AC1EC126019BEB00472B5E /* CALayer+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Color.swift"; sourceTree = "<group>"; };
 		52CFDE0D25E4A15000FA1226 /* TabBarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CFDE1025E4A15000FA1226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CFDE1225E4A15000FA1226 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +45,11 @@
 		52CFDE2725E4A1BC00FA1226 /* EZTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTabBarViewController.swift; sourceTree = "<group>"; };
 		52D07A7C25E8CFBB00139941 /* EZTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTableViewController.swift; sourceTree = "<group>"; };
 		52D07A8025E8D0E900139941 /* EZTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZTableDetailViewController.swift; sourceTree = "<group>"; };
+		52D3D1882600AEC700AFD23B /* CGCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CGCardView.xib; sourceTree = "<group>"; };
+		52D3D18B2600AEDA00AFD23B /* CGCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGCardView.swift; sourceTree = "<group>"; };
+		52D3D18E2600B11900AFD23B /* CGMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGMainViewController.swift; sourceTree = "<group>"; };
+		52D3D1912600B12800AFD23B /* CGMainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CGMainViewController.storyboard; sourceTree = "<group>"; };
+		52D3D1952600B9A900AFD23B /* nib+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "nib+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,8 @@
 		52CFDE0F25E4A15000FA1226 /* TabBarSample */ = {
 			isa = PBXGroup;
 			children = (
+				52D3D1942600B99A00AFD23B /* Extensions */,
+				52D3D1872600AE9900AFD23B /* CardGameViewControllers */,
 				5230807B25EF6F4D00850BEF /* ShareViewControllers */,
 				52CFDE2F25E4A36D00FA1226 /* ViewControllers */,
 				52CFDE1025E4A15000FA1226 /* AppDelegate.swift */,
@@ -99,6 +115,27 @@
 				5230808225EF71A500850BEF /* EZMyShareViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52D3D1872600AE9900AFD23B /* CardGameViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52D3D1882600AEC700AFD23B /* CGCardView.xib */,
+				52D3D18B2600AEDA00AFD23B /* CGCardView.swift */,
+				52D3D18E2600B11900AFD23B /* CGMainViewController.swift */,
+				52D3D1912600B12800AFD23B /* CGMainViewController.storyboard */,
+			);
+			path = CardGameViewControllers;
+			sourceTree = "<group>";
+		};
+		52D3D1942600B99A00AFD23B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52D3D1952600B9A900AFD23B /* nib+UIView.swift */,
+				52AC1EBE26019BAE00472B5E /* UIView+RoundCorner.swift */,
+				52AC1EC126019BEB00472B5E /* CALayer+Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +197,8 @@
 			files = (
 				5230808025EF706400850BEF /* EZShareViewController.storyboard in Resources */,
 				52CFDE1D25E4A15000FA1226 /* LaunchScreen.storyboard in Resources */,
+				52D3D1922600B12800AFD23B /* CGMainViewController.storyboard in Resources */,
+				52D3D1892600AEC700AFD23B /* CGCardView.xib in Resources */,
 				52CFDE1A25E4A15000FA1226 /* Assets.xcassets in Resources */,
 				52CFDE1825E4A15000FA1226 /* Main.storyboard in Resources */,
 			);
@@ -174,11 +213,16 @@
 			files = (
 				5230807D25EF6F7600850BEF /* EZShareViewController.swift in Sources */,
 				52CFDE1525E4A15000FA1226 /* ViewController.swift in Sources */,
+				52D3D18C2600AEDA00AFD23B /* CGCardView.swift in Sources */,
+				52AC1EC226019BEB00472B5E /* CALayer+Color.swift in Sources */,
+				52D3D18F2600B11900AFD23B /* CGMainViewController.swift in Sources */,
+				52AC1EBF26019BAE00472B5E /* UIView+RoundCorner.swift in Sources */,
 				52CFDE2825E4A1BC00FA1226 /* EZTabBarViewController.swift in Sources */,
 				52CFDE1125E4A15000FA1226 /* AppDelegate.swift in Sources */,
 				52D07A8125E8D0E900139941 /* EZTableDetailViewController.swift in Sources */,
 				52CFDE1325E4A15000FA1226 /* SceneDelegate.swift in Sources */,
 				52D07A7D25E8CFBB00139941 /* EZTableViewController.swift in Sources */,
+				52D3D1962600B9A900AFD23B /* nib+UIView.swift in Sources */,
 				5230808325EF71A500850BEF /* EZMyShareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
